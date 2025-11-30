@@ -117,6 +117,18 @@ kodilla-collections/
 │           └── StampsApplication.java
 └── test/java/com/kodilla/collections/
 ```
+### Dependencies (Gradle)
+```
+plugins { id 'java' }
+group = 'com.kodilla'
+version = '1.0-SNAPSHOT'
+repositories { mavenCentral() }
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+test { useJUnitPlatform() }
+```
 
 **Test Suites Overview:**  
 - **Interfaces:**  
@@ -239,7 +251,7 @@ test { useJUnitPlatform() }
 ```
 ---
 
-## Module 4: extra-exercises
+## Module 5: extra-exercises
 
 ### Description
 Personal exercises practicing Java basics, arrays, loops, conditional statements, custom methods, OOP, and search algorithms.
@@ -309,4 +321,5 @@ See the `LICENSE` file for details.
 - IntelliJ IDEA documentation
 - Oracle Streams & Optional documentation
 - Stack Overflow
+
 
